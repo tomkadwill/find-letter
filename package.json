@@ -1,7 +1,7 @@
 {
   "name": "find-letter",
   "main": "./lib/find-letter-view",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Jump to next occurrence letter with `ctrl-f`.",
   "author": "Tom Kadwill",
   "activationEvents": {
