@@ -1,14 +1,16 @@
 {
-  "name": "go-to-line",
-  "version": "0.18.0",
-  "main": "./lib/go-to-line-view",
-  "description": "Jump to a specific editor line number with `ctrl-g`.",
-  "license": "MIT",
+  "name": "find-letter",
+  "main": "./lib/find-letter-view",
+  "version": "0.0.0",
+  "description": "Jump to next occurrence letter with `ctrl-f`.",
+  "author": "Tom Kadwill",
   "activationEvents": {
-    "go-to-line:toggle": ".editor"
+    "find-letter:toggle": ".editor"
   },
-  "repository": "https://github.com/atom/go-to-line",
+  "repository": "https://github.com/tomkadwill/find-letter",
+  "license": "MIT",
   "engines": {
-    "atom": "*"
-  }
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
 }

@@ -1,18 +1,18 @@
 {$, EditorView, Point, View} = require 'atom'
 
 module.exports =
-class GoToLineView extends View
-  @activate: -> new GoToLineView
+class FindLetterView extends View
+  @activate: -> new FindLetterView
 
   @content: ->
-    @div class: 'go-to-line overlay from-top mini', =>
+    @div class: 'find-letter overlay from-top mini', =>
       @subview 'miniEditor', new EditorView(mini: true)
       @div class: 'message', outlet: 'message'
 
   detaching: false
 
   initialize: ->
-    atom.workspaceView.command 'go-to-line:toggle', '.editor', => @toggle()
+    atom.workspaceView.command 'find-letter:toggle', '.editor', => @toggle()
     @miniEditor.hiddenInput.on 'focusout', => @detach() unless @detaching
     @on 'core:confirm', => @confirm()
     @on 'core:cancel', => @detach()

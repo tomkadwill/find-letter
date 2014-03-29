@@ -1,0 +1,15 @@
+'.platform-darwin':
+  'ctrl-f': 'find-letter:toggle'
+
+'.platform-win32':
+  'ctrl-f': 'find-letter:toggle'
+
+'.find-letter .mini.editor input':
+  'enter': 'core:confirm',
+  'escape': 'core:cancel'
+
+'.platform-darwin .find-letter .mini.editor input':
+  'cmd-w': 'core:cancel'
+
+'.platform-win32 .find-letter .mini.editor input':
+  'ctrl-w': 'core:cancel'

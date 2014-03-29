@@ -1,5 +1,3 @@
-# Go To Line package
+# Find Letter package
 
-Move the cursor to a specific line in the editor using `ctrl-g`.
-
-![](https://f.cloud.github.com/assets/671378/2241602/fdd88c4c-9cd8-11e3-9d14-74844ec7da01.png)
+Jump to next occurrence letter with `ctrl-f`
