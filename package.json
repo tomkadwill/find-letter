@@ -1,13 +1,14 @@
 {
-  "name": "find-letter",
-  "main": "./lib/find-letter",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "repository": "https://github.com/tomkadwill/find-letter",
+  "name": "go-to-line",
+  "version": "0.18.0",
+  "main": "./lib/go-to-line-view",
+  "description": "Jump to a specific editor line number with `ctrl-g`.",
   "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
+  "activationEvents": {
+    "go-to-line:toggle": ".editor"
   },
-  "dependencies": {
+  "repository": "https://github.com/atom/go-to-line",
+  "engines": {
+    "atom": "*"
   }
 }

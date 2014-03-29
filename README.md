@@ -1,5 +1,5 @@
-# find-letter package
+# Go To Line package
 
-A short description of your package.
+Move the cursor to a specific line in the editor using `ctrl-g`.
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![](https://f.cloud.github.com/assets/671378/2241602/fdd88c4c-9cd8-11e3-9d14-74844ec7da01.png)
