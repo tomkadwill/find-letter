@@ -8,4 +8,7 @@ module.exports =
     
   testTom: ->
     cursor = atom.workspaceView.getActiveView().editor.getCursor()
-    cursor.setBufferPosition([0,6])
+    currentRow = cursor.getBufferRow()
+    currentLine = cursor.getCurrentBufferLine()
+    nextOccuranceOf = currentLine.indexOf("f")
+    cursor.setBufferPosition([currentRow, nextOccuranceOf])
