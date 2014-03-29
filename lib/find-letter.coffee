@@ -10,5 +10,8 @@ module.exports =
     cursor = atom.workspaceView.getActiveView().editor.getCursor()
     currentRow = cursor.getBufferRow()
     currentLine = cursor.getCurrentBufferLine()
-    nextOccuranceOf = currentLine.indexOf("f")
+    
+    currentCursorColumn = cursor.getBufferPosition().column
+    nextOccuranceOf = currentLine.indexOf("f", currentCursorColumn + 1)
+    
     cursor.setBufferPosition([currentRow, nextOccuranceOf])
