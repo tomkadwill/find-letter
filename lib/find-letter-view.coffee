@@ -43,6 +43,7 @@ class FindLetterView extends View
 
     @detach()
 
+    editor = atom.workspaceView.getActiveView().editor
     cursor = atom.workspaceView.getActiveView().editor.getCursor()
     currentRow = cursor.getBufferRow()
     currentLine = cursor.getCurrentBufferLine()
@@ -50,7 +51,11 @@ class FindLetterView extends View
     currentCursorColumn = cursor.getBufferPosition().column
     nextOccuranceOf = currentLine.indexOf(character, currentCursorColumn + 1)
     
-    cursor.setBufferPosition([currentRow, nextOccuranceOf])
+    if editor.getSelectedText().length == 0
+      cursor.setBufferPosition([currentRow, nextOccuranceOf])
+    else
+      start = editor.getSelectedBufferRange().start
+      editor.setSelectedBufferRange([start,[currentRow, nextOccuranceOf]])
 
   storeFocusedElement: ->
     @previouslyFocusedElement = $(':focus')
